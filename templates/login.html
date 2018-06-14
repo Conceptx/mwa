@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="../static/js/prefixfree.min.js"></script>
+  <link href="../static/styles/login.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="../static/styles/signup.css"/>
+
+</head>
+
+<body>
+
+  <div class="body" style="background: url('../static/images/demo/backgrounds/1.jpg');"></div>
+		<div class="grad"></div>
+		<div class="header">
+
+			<div>
+				<center>
+					<h1>loan Management Portal</h1>
+				</center></div>
+		</div>
+		<br>
+		<div class="login">
+			<p id="0"></p>
+
+		<form action="http://localhost:7070/login" method="post">
+
+		<input type="text" name="username" placeholder="username"  id="1"><br/>
+
+		<input type="password" name="password" placeholder="password"  id="2"><br/>
+
+		<input type="submit" value="Login"><br/>
+
+		<p>Need an account ?  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="{{url_for('signup')}}"><u>Sign Up</u></a>
+		</p>
+
+		</form>
+	</div>
+
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script type="text/javascript">
+  	function login(){
+  		// body...
+
+  	var username = document.getElementById('1').value;
+  	var password = document.getElementById('2').value;
+
+  	if(username == '')
+  	{
+  		document.getElementById('0').textContent = " username cannot be empty";
+  	}
+  	else if(password == '')
+  	{
+  		document.getElementById('0').textContent = "password cannot be empty";
+  	}
+  }
+
+  </script>
+
+</body>
+
+</html>

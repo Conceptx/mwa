@@ -1,0 +1,253 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Application Form</title>
+
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+
+  <link href="../static/styles/form.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../static/styles/switchery.min.css" rel="stylesheet" type="text/css" media="all">
+  <script type="text/javascript" src="../static/js/switchery.min.js"></script>
+</head>
+
+<body style="background: url('../static/images/demo/backgrounds/1.jpg');">
+  <div id="wrapper" >
+
+  <h1>Application Form</h1>
+
+  <form action="{{url_for('application')}}" method="post">
+  <div class="col-3">
+    <label>
+      Name
+      <input placeholder="Enter name" name="name" id="1" tabindex="1" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Surname
+      <input type="text" placeholder="Enter surname" name="surname" id="2" tabindex="2" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Physical Address
+      <input type="text" placeholder="Where do you currently work?" name="address" id="2" tabindex="2" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-3">
+    <label>
+      Phone Number
+      <input placeholder="What is the best # to reach you?" name="contact" id="3" tabindex="3" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Email
+      <input placeholder="What is your e-mail address?" name="email" id="4"  tabindex="4" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Gender
+      <select name="gender" tabindex="5">
+        <option name="gender">Male</option>
+        <option name="gender">Female</option>
+      </select>
+    </label>
+  </div>
+
+ <center>
+   <div class="col-4">
+    <label>
+      ID Number
+      <input placeholder="ID Number" name="nat_id" id="5" tabindex="6" required autocomplete="off">
+    </label>
+  </div>
+ </center>
+
+ <label>Work details</label>
+  <div class="col-2" style="padding-top: 50px;">
+
+    <label>
+      Company Name
+      <input placeholder="Where do you currently work?" name="company" id="6"  tabindex="1" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Company Address
+      <input type="text" placeholder="Address" name="coaddress" id="7" tabindex="2" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-3">
+    <label>
+      Occupation
+      <input placeholder="What is your  Ocupation" name="occupation" id="8" tabindex="3" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Salary
+      <input placeholder="What is your Salary Amount?" name="salary" id="9"  tabindex="4" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-2" style="padding-top: 30px;">
+    <label>
+      Loan Amount
+      <input placeholder="How much" name="amount" id="10"  tabindex="1" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Interest Rate
+      <input type="number" name="interest" placeholder="Interest Rate?" id="11"  tabindex="2" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-3">
+    <label>
+      Tenure
+      <input name="tenure" placeholder="What is the Tenure?" id="12" tabindex="3" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Ec- Number
+      <input  name="ec" placeholder="client Ec-number?" id="13" tabindex="4" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      <select tabindex="5">
+      </select>
+    </label>
+  </div>
+
+ <center>
+   <div class="col-4">
+    <label>
+      Sector
+      <input name="sector" placeholder="Sector" id="14"  tabindex="5" required autocomplete="off">
+    </label>
+  </div>
+ </center>
+
+ <div class="col-2">
+    <label>
+      Next of Kin
+      <input name="nok" placeholder="name?" id="15" tabindex="1" required autocomplete="off">
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      physical Address
+      <input type="text" name="nokAddress" placeholder="Address?" id="16"  tabindex="2" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-3">
+    <label>
+      Phone Number
+      <input name="nokContact" placeholder="Contact Number?" id="17"  tabindex="3" required autocomplete="off">
+    </label>
+  </div>
+
+  <div class="col-submit">
+    <button class="submitbtn" type="submit">Submit Form</button>
+  </div>
+
+  </form>
+  </div>
+
+
+
+
+  <script type="text/javascript">
+    function save()
+    {
+
+        var ref = Math.floor(Math.random()*100000);
+        var a = document.getElementById('1').value;
+        var b = document.getElementById('2').value;
+        var c = document.getElementById('3').value;
+        var d = document.getElementById('4').value;
+        var e = document.getElementById('5').value;
+        var g = document.getElementById('6').value;
+        var h = document.getElementById('7').value;
+        var i = document.getElementById('8').value;
+        var j = document.getElementById('9').value;
+        var k = document.getElementById('10').value;
+        var l = document.getElementById('11').value;
+        var m = document.getElementById('12').value;
+        var n = document.getElementById('13').value;
+        var o = document.getElementById('14').value;
+        var p = document.getElementById('15').value;
+        var q = document.getElementById('16').value;
+        var r = document.getElementById('17').value;
+        var s=  document.getElementById('18').value;
+
+        if( a == ""||b==''||c==''||d==''||e ==''|| g ==''|| h == ''||i ==''||j==""||k ==""||l ==''||m == ''|| o== ''||p == ''||q==''||r ==''||s=='')
+        {
+            alert("please fill all the fields");
+        }
+        else
+        {
+            if(isNaN(c))
+            {
+                alert("invalid Phone Number");
+            }
+            else if (isNaN(d))
+            {
+                alert("invalid Salary Amount")
+            }
+            else if (isNaN(j))
+            {
+                alert("invalid loan amount");
+            }
+            else if (isNaN(k))
+            {
+                alert("invalid Interest rate");
+            }
+            else
+            {
+                var email = document.getElementById('4');
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+                if(email.value.match(mailformat))
+                {
+                   alert("Client successfully added \n Reference number: "+ref);
+                   return true;
+                }
+                else
+                {
+                    alert("you have entered an invalid email address");
+                    return false;
+                }
+
+            }
+
+
+
+        }
+
+
+    }
+</script>
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>

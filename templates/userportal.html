@@ -1,0 +1,82 @@
+﻿{% extends "home.html" %}
+{% block content %}
+
+<link href="../static/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../static/styles/login.css" rel="stylesheet" type="text/css" media="all">
+
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sidebar one_quarter first">
+      <!-- ################################################################################################ -->
+      <h6>Logged in as <br><b>{{username}}</b></h6>
+      <nav class="sdb_holder">
+        <br><br><br><br>
+        <div class="Portalbtn">
+ <li><a href="{{url_for('home')}}"><input type="button" value="Home" ></a></li><br><br>
+
+  <li><a href="{{url_for('clientDetails')}}"><input type="button" value="Personal Details"></a></li><br><br>
+
+  <li><a href="{{url_for('clientDetails')}}"><input type="button" value="Contact Details"></a></li><br><br>
+
+
+   <li><a href="{{url_for('history')}}"><input type="button" value="Account History"></a></li>
+   <br><br>
+
+    <li><a><input type="button" value="Log out" onclick="func()"></a></li>
+  </div>
+    <br><br>
+      </nav>
+
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    {% block details %}
+    <div class="content three_quarter" style="padding-top: 100px;">
+              <marquee behavior="scroll" direction="top" class="m001">
+                <b>
+                  These are the rules of a contract – the important information about the deal you are entering into and your rights as a consumer. They set out what you and the seller must do to complete the contract. Once you enter into a contract, you have accepted the terms and conditions. Make sure you read and understand these. If you are unsure, seek legal help before you sign.
+                </b>
+              </marquee>
+              <p>
+                <h1>Paying a deposit</h1>
+A deposit is a form of security that the contract to buy will go ahead. After the contract is completed, you will pay the balance – the rest of the money.
+
+It is for you and the trader to agree on whether a deposit is to be paid, how much the deposit will be, and in what circumstances the deposit will be refunded. If the trader does require a deposit:
+
+ask whether the deposit will be refundable and make this a term of the contract
+only pay a deposit of 10% or less, unless you have ordered purpose-built products such as kitchen joinery, when a larger deposit may be reasonable
+get a receipt showing the amount paid, the balance owing, and whether the deposit is refundable.
+Getting a quote or estimate before work starts: It’s vital to get a quote or estimate before you get work done such as house renovations or repairs. You should shop around by getting a range of quotes from different tradespeople.
+              </p>
+      <li><a href="#">Apply New Loan</a></li>
+    </div>
+    {% endblock %}
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- Footer Background Image Wrapper -->
+<!-- JAVASCRIPTS -->
+<script type="text/javascript">
+  function func()
+{
+
+
+alert("You have successfully logged Out");
+
+    window.location.href = "{{url_for('logout')}}";
+
+}
+</script>
+<script src="../static/scripts/jquery.min.js"></script>
+<script src="../static/scripts/jquery.backtotop.js"></script>
+<script src="../static/scripts/jquery.mobilemenu.js"></script>
+{% endblock %}

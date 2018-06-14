@@ -1,0 +1,63 @@
+{% extends "adminportal.html" %}
+                            {% block content %}
+                            <style> tr{color: black;} </style><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>Loan ID</th>
+      <th>Amount</th>
+      <th>Interest</th>
+      <th>Tenure</th>
+      <th>Sector</th>
+      <th>Client ID</th>
+      <th>Date Issued</th>
+      <th>p(Default) %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>7000</td>
+      <td>25</td>
+      <td>30</td>
+      <td>Agriculture</td>
+      <td>1</td>
+      <td>2018-04-20</td>
+      <td>44.303797</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>3300</td>
+      <td>25</td>
+      <td>30</td>
+      <td>Services</td>
+      <td>1</td>
+      <td>2018-04-25</td>
+      <td>20.886076</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>4500</td>
+      <td>25</td>
+      <td>30</td>
+      <td>Services</td>
+      <td>2</td>
+      <td>2018-04-12</td>
+      <td>28.481013</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1000</td>
+      <td>25</td>
+      <td>30</td>
+      <td>Mining</td>
+      <td>2</td>
+      <td>2018-03-15</td>
+      <td>6.329114</td>
+    </tr>
+  </tbody>
+</table><p style="color:red" >Probability of Default : <strong> {{probability}} </strong></p>{% endblock %}

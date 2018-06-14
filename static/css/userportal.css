@@ -1,0 +1,131 @@
+.divs
+{
+	display:grid;
+	grid-template-columns: 25% 75%;
+	height: 500px;
+
+}
+#0012
+{
+	height: 20px;
+	color: navy;
+}
+.center
+{
+	background-color: whitesmoke;
+}
+
+.buttons
+{
+	color: navy;
+	margin-top: 60px;
+	
+}
+li
+{
+	list-style: none;
+}
+.dropbtn {
+    background-color: none;
+    color: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    grid-column-gap: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: none;;
+}
+.select
+{
+	width: 100px;
+	font: 24px;
+	color: navy;
+	height: 30px;
+}
+.searchbox
+{
+	width: 700px;
+	font-size: 18px;
+	height: 30px;
+	float: right;
+}
+.rows
+{
+	display:grid;
+	grid-template-rows: 80% 20%;
+}
+.button
+{
+	color: navy;
+	width: 100px;
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+
+}
+.btnsearch
+{
+	display: block;
+	width: 100px;
+	border: none;
+	background: none;
+	float: right;
+	font-size: 18px;
+
+}
+.welcome
+{
+	font-size: 14px;
+	font-family: segoe;
+	font-weight: lighter;
+	color: navy;
+	margin-top: 30px;
+}
+.portalmain
+{
+	margin-top: 70px;
+}
+.admintable
+{
+	width: 100%;
+}
+.admin
+{
+	width: 700px;
+	font-size: 24px;
+	float: right;
+}
+.searches
+{
+	margin-bottom: 100px;
+	padding: 100px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <script src="js/prefixfree.min.js"></script>
+  <link href="../static/styles/login.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+
+<body>
+
+  <div class="body" style="background: url('../static/images/demo/backgrounds/1.jpg');"></div>
+		<div class="grad"></div>
+		<div class="header">
+
+			<div>
+				<center>
+					<h1>loan Management Portal</h1>
+				</center>
+			</div>
+
+	</div>
+
+		<br>
+
+		<div class="login">
+		<p class="alert" id="alert"></p>
+		<form action="{{url_for('signup')}}" method="post">
+		<input type="text" placeholder="Username" id="username" name="username"><br>
+		<input type="email" placeholder="Email" id="email" name="email"><br>
+		<input type="password" placeholder="Password" id="p1" name="password"><br>
+		<input type="password" placeholder="Confirm password" id="p2"><br>
+		<input type="submit" value="Sign Up" onclick="validatesignup()"><br/>
+		</form>
+		</div>
+
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script type="text/javascript">
+  function validatesignup()
+  {
+    var email = document.getElementById('email');
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var name = document.getElementById('name').value;
+    var Surname = document.getElementById('Surname').value;
+    var password1 = document.getElementById("p1").value;
+    var password2 =document.getElementById("p2").value;
+    if (password1 === password2)
+		    {
+					  if(email.value.match(mailformat))
+					  {
+					  	if (name === ''||Surname === ''||password1 === ''||password2 === '')
+					  	{
+					  		document.getElementById('alert').textContent = "Please fill all the fields";
+					  	}
+					  	else
+					  	{
+						alert(name);
+					    window.location.href="userportal.html";
+					  	}
+
+					  }
+					  else
+					  {
+					  	document.getElementById('alert').textContent = "invalid email address";
+					  }
+			}
+	else
+		    {
+		      document.getElementById('alert').textContent = "password doesnt match";
+		    }
+    // body...
+  }
+</script>
+
+</body>
+
+</html>

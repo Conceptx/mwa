@@ -1,0 +1,28 @@
+{% extends "userportal.html" %}
+                            {% block details %}
+                            <style> tr{color: black;} </style><script> document.getElementsByTagName("thead").style.text-align = "left"</script><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Payment #</th>
+      <th>Payment Date</th>
+      <th>Loan ID</th>
+      <th>Amount</th>
+      <th>Loan Type</th>
+      <th>Instalment</th>
+      <th>Paid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>5/9/2018</td>
+      <td>1</td>
+      <td>7000</td>
+      <td>Agriculture</td>
+      <td>555</td>
+      <td>2120</td>
+    </tr>
+  </tbody>
+</table>{% endblock %}

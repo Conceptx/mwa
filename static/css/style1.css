@@ -1,0 +1,74 @@
+.admin
+{
+	width:800px;
+	background-color: whitesmoke;
+	font-size: 28px;
+}
+.btnadmin
+{
+	color: navy;
+	font: whitesmoke;
+	font-size: 28px;
+	width: 100px;
+}
+.admintable
+{
+	width: 100%;
+}
+input
+{
+	width: all;
+	height: auto;
+
+}
+.authentication
+{    
+	margin-top: 200px;
+
+}
+.auth
+{
+	color: navy;
+	font-size: 24px;
+}
+.pass
+{
+	width: 400px;
+	font-size: 24px;
+}
+
+.newloan
+{
+	background-color: whitesmoke;
+
+}
+label
+{
+	font: 18px;
+	color: black;
+
+}
+.mandotory
+{
+	color: red;
+
+}
+.newloanbtn
+{
+	width: 200px;
+	height: 40px;
+	background-color: navy;
+	color: whitesmoke;
+	align-self: center;
+	margin-top: 40px;
+}
+.loginpage
+{
+	float: right;
+	display: inline-block;
+}
+.logins
+{
+	margin-top: 50px;
+	background-color: whitesmoke;
+}

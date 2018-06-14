@@ -1,0 +1,46 @@
+{% extends "home.html" %}
+{% block content %}
+<link href="../static/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../static/styles/login.css" rel="stylesheet" type="text/css" media="all">
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <div class="sidebar one_quarter first">
+      <!-- ################################################################################################ -->
+      <h6>Logged in as <br><b>{{username}}</b></h6>
+      <nav class="sdb_holder"> <br><br><br><br>
+        <div class="Portalbtn">
+
+  <li><a href="{{url_for('home')}}"><input type="button" value="Home"></a></li><br><br>
+  <li><a href="{{url_for('cindex')}}"><input type="button" value="Concentration index"></a></li><br><br>
+  <li><a href="{{url_for('new')}}"><input type="button" value="Issue Loan"></a></li><br><br>
+  <li><a href="{{url_for('application')}}"><input type="button" value="Issue First-Time Loan"></a></li><br><br>
+  <li><a href="{{url_for('defaults')}}"><input type="button" value="Defaults" ></a></li><br><br>
+  <li><a href="{{url_for('update')}}"><input type="button" value="Update" ></a></li><br><br>
+  <li><a href="#"><input type="button" value="Log out" onclick="func()"></a></li><br><br>
+
+  </div>
+      </nav>
+
+      <!-- ################################################################################################ -->
+    </div>
+    <div class="clear"></div>
+  </main>
+</div>
+
+<!-- JAVASCRIPTS -->
+
+<script type="text/javascript">
+  function func()
+{
+
+
+alert("You have successfully logged Out");
+
+    window.location.href = "{{url_for('login')}}";
+
+}
+</script>
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+{% endblock %}
